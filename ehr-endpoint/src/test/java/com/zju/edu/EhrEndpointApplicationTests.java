@@ -1,4 +1,4 @@
-package com.zju.edu.EHRarch;
+package com.zju.edu;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class EhrArchApplicationTests {
+public class EhrEndpointApplicationTests {
 
 	@Test
 	public void contextLoads() {
