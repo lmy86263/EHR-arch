@@ -64,12 +64,35 @@
 			<artifactId>hadoop-client</artifactId>
 			<version>2.7.3</version>
 		</dependency>
+		<!-- hbase orm -->
+		<!--<dependency>-->
+		<!--<groupId>com.impetus.kundera.client</groupId>-->
+		<!--<artifactId>kundera-hbase-v2</artifactId>-->
+		<!--<version>3.13</version>-->
+		<!--</dependency>-->
+		
+		<!--<dependency>-->
+		<!--<groupId>allen</groupId>-->
+		<!--<artifactId>simplehbase</artifactId>-->
+		<!--<version>1.1</version>-->
+		<!--<exclusions>-->
+		<!--<exclusion>-->
+		<!--<groupId>org.apache.hadoop.thirdparty.guava</groupId>-->
+		<!--<artifactId>guava</artifactId>-->
+		<!--</exclusion>-->
+		<!--<exclusion>-->
+		<!--<groupId>com.google.guava</groupId>-->
+		<!--<artifactId>guava</artifactId>-->
+		<!--</exclusion>-->
+		<!--</exclusions>-->
+		<!--</dependency>-->
+		
 		<dependency>
-			<groupId>com.impetus.kundera.client</groupId>
-			<artifactId>kundera-hbase-v2</artifactId>
-			<version>3.13</version>
-			<!-- go fucking yourself .............................-->
+			<groupId>zachary.zhang</groupId>
+			<artifactId>orm-hbase</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+	
 	</dependencies>
 
 	<build>
@@ -77,6 +100,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
